@@ -38,3 +38,5 @@ jobs:
         env:
           SECRETS: ${{ toJson(secrets) }}
         run: echo "$SECRETS"
+      - name: dump env
+        run: echo "${{ env }}"
